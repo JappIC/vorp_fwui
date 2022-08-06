@@ -1,0 +1,160 @@
+@font-face {
+  font-family: rdr;
+  src: url(assets/fonts/rdrlino-regular-webfont.woff);
+}
+
+:root {
+    --url-base: ../../../[vorp_essentials]/vorp_fwui/ui/;
+    --c-base: rgba(255, 0, 0, 1);
+    --c-background: rgba(0, 0, 0, 1);
+    --c-background-secundary: rgba(255, 255, 255, 1);
+    --img-background: url(assets/img/background.png);
+    --img-background-paper: url(assets/img/paper.png);
+
+    /* Font */
+    --c-text: rgba(255, 255, 255, 1);
+    --c-text-secundary: rgba(0, 0, 0, 1);
+    --font-title: "rdr";
+    --font-text: "rdr";
+    --font-size-s: 1.25rem;
+    --font-size-m: 1.3rem;
+    --font-size-l: 2rem;
+    --font-size-xl: 4rem;
+    --font-size-xxl: 5rem;
+    --font-size-xxxl: 6rem;
+
+    /* Border */
+    --c-border: rgba(197, 197, 197, 1);
+    --border: 1px solid var(--c-border);
+    --radius: 5px;
+
+    /* Shadows */
+    --c-shadow: rgb(175, 175, 175);
+    --shadow: 0 10px 60px -15px var(--c-shadow);
+    --shadow-hover: 0 10px 25px -10px var(--c-shadow);
+
+    /* Animations */
+    --transition: 0.3s;
+
+    /* Padding and Margin*/
+    --mp: 5vw;
+    --mp-s: 10px;
+    --mp-m: 25px;
+    --mp-l: 50px;
+    --mp-xl: 100px;
+    --mp-xxl: 250px;
+    --mp-xxxl: 500px;
+  
+  
+    /* Botón */
+    --c-btn: var(--c-company);
+    --bg-btn: var(--c-company2);
+  
+    /* Enlace */
+    --c-link: rgba(68, 68, 68, 1);
+    --c-link-hover: var(--c-company);
+    --c-link-active: var(--c-company);
+  
+    /* Subrayado */
+    --c-selection: var(--c-company);
+    --bg-selection: rgba(255, 255, 255, 1);
+}
+
+*{
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    line-height: 1;
+}
+
+main{
+    display: grid;
+}
+
+::selection {
+    background: var(--c-selection);
+    color: var(--bg-selection);
+}
+
+p{
+    line-height: 1.5;
+}
+
+a {
+    cursor: pointer;
+    color: var(--c-link);
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+a:hover::after,
+a:active::after,
+a:focus::after {
+    width: 100%;
+}
+
+
+a:hover {
+    color: var(--c-link-hover);
+}
+
+p a{
+    display: inline-block;
+    color: var(--c-company);
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+}
+
+/* Nueva especificación de persolalizacion de la barra de desplazamiento */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--c-company) var(--c-background);
+}
+
+/* Personalizacion de la barra de desplazamiento para navegadores basados en webkit */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--c-background);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--c-company);
+    border-radius: 6px;
+    border: 1px solid var(--c-company2);
+}
+
+.page{
+    display: grid;
+}
+
+
+/* FRAMEWORK CSS */
+
+.t-justify { text-align: justify; }
+.t-center { text-align: center; }
+.t-right { text-align: right; }
+.t-left { text-align: left; }
+.word-break { word-break: break-all; }
+
+/* Ocualtamos el ultimo post de la portada */
+.bucle-index .masterclass-125{
+    display: none !important;
+}
+
