@@ -3,8 +3,8 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-        message: '',
-        visible: false
+        message: 'Hola',
+        visible: true
       }
     },
     mounted() {
