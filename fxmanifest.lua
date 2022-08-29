@@ -4,31 +4,30 @@ rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aw
 game 'rdr3'
 lua54 'yes'
 version '0.0.1'
-author 'Jonás - [Guanche]'
+vorp_name 'VORP Framewprk UI'
+vorp_github 'https://github.com/VORPCORE/vorp_zonenotify'
+author '[Guanche]'
 
----------------- Custom Html/Css/JS UI ----------------------------------------------
---------- Elimínelos si no desea tener una interfaz de usuario personalizada --------
+---------------- THE FILE FRAMEWOKS ----------------------------------------------
 files {
     'ui/*',
     'ui/vendor/*',
+    'ui/fw/*',
+    'ui/fw/css/*',
+    'ui/fw/js/*',
     'ui/assets/*',
-    'ui/assets/fonts/*'
+    'ui/assets/fonts/*',
+    'ui/assets/img/*',
 }
-    
-ui_page 'ui/index.html'
---------------------------------------------------------------------------------------
 
----------------- Dependencies --------------------------------------------------------
----- What other scripts (if any) does your script depend on. REMOVE THIS IF NONE -----
----- ¿De qué otros scripts (si los hay) depende su script? ELIMINAR ESTO SI NO -------
+---------------- UI PAGE EXAMPLE - PÁGINA DE EJEMPLO -----------------------------
+--ui_page 'ui/index.html'--
 
+---------------- Dependencies ----------------------------------------------------
 dependencies { 
     'vorp_core'
 }
 
---------------------------------------------------------------------------------------
-
----------------- Exports -------------------------------------------------------------
-------------- If you need ------------------------------------------------------------
+---------------- EXPORT If you need ----------------------------------------------
 exports {}
---------------------------------------------------------------------------------------
+
